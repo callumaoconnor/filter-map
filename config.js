@@ -2,7 +2,7 @@ const config = {
   style: "mapbox://styles/mapbox/light-v10",
   accessToken:
     "pk.eyJ1IjoiZGVzaWdub3V0c2lkZXIiLCJhIjoiY2t2Z3MzZmU2MmMzZzMxczFvb205NHpmMCJ9.VGj4qLQIM2q_L1RiG2Tw7A",
-  CSV: "https://docs.google.com/spreadsheets/d/1_pqUyMNhdohs1YlWQQAmayZf672L-0o1hdURTvZFLkk/edit?usp=sharing",
+  CSV: "https://docs.google.com/spreadsheets/d/1_pqUyMNhdohs1YlWQQAmayZf672L-0o1hdURTvZFLkk/gviz/tq?tqx=out:csv&sheet=Sheet1",
   center: [-120.234, 47.398],
   zoom: 6,
   title: "Urban Design X",

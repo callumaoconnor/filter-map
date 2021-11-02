@@ -2,10 +2,10 @@ const config = {
   style: "mapbox://styles/mapbox/light-v10",
   accessToken:
     "pk.eyJ1IjoiZGVzaWdub3V0c2lkZXIiLCJhIjoiY2t2Z3MzZmU2MmMzZzMxczFvb205NHpmMCJ9.VGj4qLQIM2q_L1RiG2Tw7A",
-  CSV: "https://docs.google.com/spreadsheets/d/1_pqUyMNhdohs1YlWQQAmayZf672L-0o1hdURTvZFLkk/edit?usp=sharing",
+  CSV: "https://docs.google.com/spreadsheets/d/1_pqUyMNhdohs1YlWQQAmayZf672L-0o1hdURTvZFLkk",
   center: [-120.234, 47.398],
   zoom: 6,
-  title: "Urban Design x",
+  title: "Urban Design X",
   description:
     "Replace with information about your application. Ex. You can search by address to sort the list below by distance. You can also filter the list by language support options, which days a location is open, and whether they have devices to use to complete the survey by phone or online.",
   sideBarInfo: ["Title", "Summary", "Location"],

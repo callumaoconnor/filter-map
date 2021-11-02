@@ -5,7 +5,7 @@ const config = {
   CSV: "https://docs.google.com/spreadsheets/d/1_pqUyMNhdohs1YlWQQAmayZf672L-0o1hdURTvZFLkk/gviz/tq?tqx=out:csv&sheet=Sheet1",
   center: [-120.234, 47.398],
   zoom: 6,
-  title: "https://uploads-ssl.webflow.com/6151e652be3156d6becddafe/615b175a76f590bddb6a0317_URBANDESIGN%20X%20Beta.svg",
+  title: "Urban Design X",
   description:
     "Replace with information about your application. Ex. You can search by address to sort the list below by distance. You can also filter the list by language support options, which days a location is open, and whether they have devices to use to complete the survey by phone or online.",
   sideBarInfo: ["Title", "Summary", "Location"],

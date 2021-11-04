@@ -514,8 +514,3 @@ function transformRequest(url, resourceType) {
     url: isMapboxRequest ? url.replace("?", "?pluginName=finder&") : url,
   };
 }
-
-  var img = document.createElement("img"); 
-  img.src = "https://uploads-ssl.webflow.com/6151e652be3156d6becddafe/615b175a76f590bddb6a0317_URBANDESIGN%20X%20Beta.svg"; 
-  var src = document.getElementById("udx_logo"); 
-  src.appendChild(img); 

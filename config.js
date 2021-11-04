@@ -69,3 +69,8 @@ const config = {
     },
   ],
 };
+
+var img = document.createElement("img"); 
+  img.src = "Thumbnail"; 
+  var src = document.getElementById("Thumbnail"); 
+  src.appendChild(img); 

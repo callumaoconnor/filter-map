@@ -46,12 +46,6 @@ function buildLocationList(locationData) {
 
     /* Assign the `item` class to each listing for styling. */
     listing.className = "item";
-    
-    /* Add image to the individual listing. */
-    const image = listing.appendChild(document.createElement("img"));
-    image.className = "thumbnail";
-    img.src = "thumbnail";
-    document.body.appendChild(img);
 
     /* Add the link to the individual listing created above. */
     const link = listing.appendChild(document.createElement("button"));

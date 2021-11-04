@@ -8,7 +8,7 @@ const config = {
   title: "",
   description:
     "Replace with information about your application. Ex. You can search by address to sort the list below by distance. You can also filter the list by language support options, which days a location is open, and whether they have devices to use to complete the survey by phone or online.",
-  sideBarInfo: [img.src= "Thumbnail", "Title", "Location", "Summary", "Date Published"],
+  sideBarInfo: ["Thumbnail-1", "Title", "Location", "Summary", "Date Published"],
   popupInfo: ["Title"],
   filters: [
     {
@@ -70,4 +70,7 @@ const config = {
   ],
 };
 
-
+var img = document.createElement("img"); 
+  img.src = "Thumbnail"; 
+  var src = document.getElementById("Thumbnail-1"); 
+  src.appendChild(img); 

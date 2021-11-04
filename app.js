@@ -29,7 +29,7 @@ function createPopup(currentFeature) {
   if (popups[0]) popups[0].remove();
   const popup = new mapboxgl.Popup({ closeOnClick: true })
     .setLngLat(currentFeature.geometry.coordinates)
-    .setHTML("<h3>" + currentFeature.properties[config.popupInfo] + "</h3>" + '<img src='currentFeature.properties['config.popupImage']'>')
+    .setHTML("<h3>" + currentFeature.properties[config.popupInfo] + "</h3>" + '<p><img src="'currentFeature.properties[config.popupImage]'"></p>')
     .addTo(map);
 }
 

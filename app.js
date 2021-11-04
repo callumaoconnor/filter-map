@@ -46,6 +46,12 @@ function buildLocationList(locationData) {
 
     /* Assign the `item` class to each listing for styling. */
     listing.className = "item";
+    
+    /* Add image to the individual listing. */
+    const image = listing.appendChild(document.createElement("img"));
+    image.className = "thumbnail";
+    img.src = "thumbnail";
+    document.body.appendChild(img);
 
     /* Add the link to the individual listing created above. */
     const link = listing.appendChild(document.createElement("button"));
@@ -451,7 +457,7 @@ map.on("load", function () {
           },
           paint: {
             "circle-radius": 5, // size of circles
-            "circle-color": "#3D2E5D", // color of circles
+            "circle-color": "#2399d5", // color of circles
             "circle-stroke-color": "white",
             "circle-stroke-width": 1,
             "circle-opacity": 0.7,

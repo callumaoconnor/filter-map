@@ -70,7 +70,4 @@ const config = {
   ],
 };
 
-var img = document.createElement("img"); 
-  img.src = "Thumbnail"; 
-  var src = document.getElementById("Thumbnail-1"); 
-  src.appendChild(img); 
+

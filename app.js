@@ -52,7 +52,7 @@ function buildLocationList(locationData) {
     link.className = "title";
     link.id = "link-" + prop.id;
     link.innerHTML =
-      '<p style="line-height: 1.25">' + prop[columnHeaders[0]] + "</p>";
+      '<p style="line-height: 1.25">' + prop[columnHeaders[0]] + "</p>" + "<img src=" + currentFeature.properties[config.popupImage] + ">";
 
     /* Add details to the individual listing. */
     const details = listing.appendChild(document.createElement("div"));

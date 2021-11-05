@@ -30,6 +30,7 @@ function createPopup(currentFeature) {
   const popup = new mapboxgl.Popup({ closeOnClick: true })
     .setLngLat(currentFeature.geometry.coordinates)
     .setHTML("<h3>" + currentFeature.properties[config.popupInfo] + "</h3>" + "<img src='currentFeature.properties[config.popupInfo]'>")
+    .setHTML('<h3>' + currentFeature.properties.Title + '</h3>' + '<p><img src="'currentFeature.properties.Thumbnail'"></p>')
     .addTo(map);
 }
 

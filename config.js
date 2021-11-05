@@ -11,6 +11,7 @@ const config = {
   sideBarInfo: ["Title", "Location", "Summary", "Date Published"],
   popupInfo: ["Title"],
   popupImage: ["Thumbnail"],
+  popupLink: ["URL"],
   filters: [
     {
       type: "dropdown",

@@ -29,7 +29,7 @@ function createPopup(currentFeature) {
   if (popups[0]) popups[0].remove();
   const popup = new mapboxgl.Popup({ closeOnClick: true })
     .setLngLat(currentFeature.geometry.coordinates)
-    .setHTML("<h3>" + currentFeature.properties[config.popupInfo] + "</h3>" + "<img src=currentFeature.properties[config.popupImage]>")
+    .setHTML("<h3>" + currentFeature.properties[config.popupInfo] + "</h3>" + "<img src=https://uploads-ssl.webflow.com/615db6fbf887533af1c8902d/615ddf7d2cfb07a148eb8163_6127aff92924d034fd4d71f3_IMG_1054%2520(1).jpeg>")
     .addTo(map);
 }
 

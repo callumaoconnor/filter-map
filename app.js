@@ -106,7 +106,7 @@ function buildDropDownList(title, listItems) {
   const mainDiv = document.createElement("div");
   const filterTitle = document.createElement("h3");
   filterTitle.innerText = title;
-  filterTitle.classList.add("py12", "txt-bold");
+  filterTitle.classList.add("py12", "txt-bold", "title-text-co");
   mainDiv.appendChild(filterTitle);
 
   const selectContainer = document.createElement("div");
@@ -145,7 +145,7 @@ function buildCheckbox(title, listItems) {
   const mainDiv = document.createElement("div");
   const filterTitle = document.createElement("div");
   const formatcontainer = document.createElement("div");
-  filterTitle.classList.add("center", "flex-parent", "py12", "txt-bold");
+  filterTitle.classList.add("center", "flex-parent", "py12", "txt-bold", "title-text-co");
   formatcontainer.classList.add(
     "center",
     "flex-parent",
@@ -181,7 +181,7 @@ function buildCheckbox(title, listItems) {
     const checkboxDiv = document.createElement("div");
     const inputValue = document.createElement("p");
     inputValue.innerText = listItems[i];
-    checkboxDiv.classList.add("checkbox", "mr6", "1pixel-border-co");
+    checkboxDiv.classList.add("checkbox", "mr6", "onepx-border-co");
     checkboxDiv.appendChild(Assembly.createIcon("check"));
 
     container.appendChild(input);

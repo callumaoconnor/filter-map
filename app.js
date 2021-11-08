@@ -173,7 +173,7 @@ function buildCheckbox(title, listItems) {
     container.classList.add("checkbox-container");
 
     const input = document.createElement("input");
-    input.classList.add("px12", "filter-option");
+    input.classList.add("px12", "filter-option", "checkbox-text-co");
     input.setAttribute("type", "checkbox");
     input.setAttribute("id", listItems[i]);
     input.setAttribute("value", listItems[i]);

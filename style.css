@@ -122,3 +122,25 @@
     text-transform: capitalize;
 
   }
+
+.checkbox-text-co {
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+
+  }
+
+.project-title-co {
+    font-family: Bebasneuepro, sans-serif;
+    font-size: 20px;
+    font-weight: 400!important;
+    text-transform: capitalize;
+
+  }
+
+.project-modal-title-co {
+    font-family: Bebasneuepro, sans-serif;
+    font-size: 20px;
+    font-weight: 400!important;
+    text-transform: capitalize;
+
+  }

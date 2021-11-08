@@ -98,5 +98,18 @@
 
   }
 
+.full-width-co {
+    width: 100%!important;
+
+  }
+
+.two-columns-co {
+    display: grid!important;
+    column-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+
 
   

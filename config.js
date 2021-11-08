@@ -40,7 +40,7 @@ const config = {
       type: "checkbox",
       title: "Typology: ",
       columnHeader: "Typology", // Case sensitive - must match spreadsheet entry
-      listItems: ["Master Plan", "Office", "Residential", "Public", "Cultural", "Tower", "Infrastructure", "Education", "Landscape", "Restaurant", "Industrial", "Low Rise", "Public Space", "Leisure", "Mixed Use", "Religion", "Retail", "Services", "Public Art"], // Case sensitive - must match spreadsheet entry; This will take up to six inputs but is best used with a maximum of three;
+      listItems: ["Master Plan", "Office", "Residential", "Public", "Cultural", "Infrastructure", "Education", "Landscape", "Restaurant", "Industrial", "Public Space", "Leisure", "Mixed Use", "Religion", "Retail", "Services", "Public Art"], // Case sensitive - must match spreadsheet entry; This will take up to six inputs but is best used with a maximum of three;
     },
     {
       type: "dropdown",

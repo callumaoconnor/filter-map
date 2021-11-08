@@ -61,7 +61,7 @@ function buildLocationList(locationData) {
     for (let i = 1; i < columnHeaders.length; i++) {
       const div = document.createElement("div");
       div.innerText += prop[columnHeaders[i]];
-      div.className;
+      div.className = "item-detail-co";
       details.appendChild(div);
     }
 

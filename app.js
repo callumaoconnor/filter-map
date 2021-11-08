@@ -181,7 +181,7 @@ function buildCheckbox(title, listItems) {
     const checkboxDiv = document.createElement("div");
     const inputValue = document.createElement("p");
     inputValue.innerText = listItems[i];
-    checkboxDiv.classList.add("checkbox", "mr6", "1px-border-co");
+    checkboxDiv.classList.add("checkbox", "mr6", "1pixel-border-co");
     checkboxDiv.appendChild(Assembly.createIcon("check"));
 
     container.appendChild(input);

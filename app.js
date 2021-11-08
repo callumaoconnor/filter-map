@@ -29,7 +29,7 @@ function createPopup(currentFeature) {
   if (popups[0]) popups[0].remove();
   const popup = new mapboxgl.Popup({ closeOnClick: true })
     .setLngLat(currentFeature.geometry.coordinates)
-    .setHTML('<p style="line-height: 1.25; padding-bottom: 12px; padding-top: 15px; font-family: Bebasneuepro, sans-serif; font-size: 20px!important; font-weight: 400!important; text-transform: capitalize;">' + currentFeature.properties[config.popupInfo] + "</p>" + "<a href=" + currentFeature.properties[config.popupLink] + "><img src=" + currentFeature.properties[config.popupImage] + "></a>")
+    .setHTML('<p style="font-family: Bebasneuepro, sans-serif; font-size: 20px!important; font-weight: 400!important; text-transform: capitalize;">' + currentFeature.properties[config.popupInfo] + "</p>" + "<a href=" + currentFeature.properties[config.popupLink] + "><img src=" + currentFeature.properties[config.popupImage] + "></a>")
     .addTo(map);
 }
 

@@ -110,7 +110,7 @@ function buildDropDownList(title, listItems) {
   mainDiv.appendChild(filterTitle);
 
   const selectContainer = document.createElement("div");
-  selectContainer.classList.add("select-container", "center");
+  selectContainer.classList.add("select-container", "center", "full-width-co");
 
   const dropDown = document.createElement("select");
   dropDown.classList.add("select", "filter-option");
@@ -159,7 +159,8 @@ function buildCheckbox(title, listItems) {
     "flex-parent",
     "py12",
     "px3",
-    "flex-parent--space-between-main"
+    "flex-parent--space-between-main",
+    "two-columns-co"
   );
   filterTitle.innerText = title;
   mainDiv.appendChild(filterTitle);
@@ -179,7 +180,7 @@ function buildCheckbox(title, listItems) {
     const checkboxDiv = document.createElement("div");
     const inputValue = document.createElement("p");
     inputValue.innerText = listItems[i];
-    checkboxDiv.classList.add("checkbox", "mr6");
+    checkboxDiv.classList.add("checkbox", "mr6", "1px-border-co");
     checkboxDiv.appendChild(Assembly.createIcon("check"));
 
     container.appendChild(input);

@@ -151,7 +151,8 @@ function buildCheckbox(title, listItems) {
     "flex-parent",
     "flex-parent--column",
     "px3",
-    "flex-parent--space-between-main"
+    "flex-parent--space-between-main",
+    "two-columns-co"
   );
   const secondLine = document.createElement("div");
   secondLine.classList.add(

@@ -29,7 +29,7 @@ function createPopup(currentFeature) {
   if (popups[0]) popups[0].remove();
   const popup = new mapboxgl.Popup({ closeOnClick: true })
     .setLngLat(currentFeature.geometry.coordinates)
-    .setHTML('<p style="padding-bottom: 8px; font-family: Bebasneuepro, sans-serif; font-size: 20px!important; font-weight: 400!important; text-transform: capitalize;">' + currentFeature.properties[config.popupInfo] + "</p>" + '<a href=' + currentFeature.properties[config.popupLink] + '><img style="height: 120px; width: 100%; fit: cover" src=' + currentFeature.properties[config.popupImage] + "></a>")
+    .setHTML('<p style="padding-bottom: 8px; font-family: Bebasneuepro, sans-serif; font-size: 20px!important; font-weight: 400!important; text-transform: capitalize;">' + currentFeature.properties[config.popupInfo] + "</p>" + '<a href=' + currentFeature.properties[config.popupLink] + '><img style="height: 120px; width: 100%; object-fit: cover" src=' + currentFeature.properties[config.popupImage] + "></a>")
     .addTo(map);
 }
 
@@ -52,7 +52,7 @@ function buildLocationList(locationData) {
     link.className = "title";
     link.id = "link-" + prop.id;
     link.innerHTML =
-      '<p style="line-height: 1.25; padding-bottom: 12px; padding-top: 15px; font-family: Bebasneuepro, sans-serif; font-size: 26px; font-weight: 400!important; text-transform: capitalize;">' + prop[columnHeaders[0]] + "</p>" + '<img style="padding-bottom: 15px; height: 250px; width: 100%; fit: cover" src=' + prop[config.popupImage] + ">";
+      '<p style="line-height: 1.25; padding-bottom: 12px; padding-top: 15px; font-family: Bebasneuepro, sans-serif; font-size: 26px; font-weight: 400!important; text-transform: capitalize;">' + prop[columnHeaders[0]] + "</p>" + '<img style="padding-bottom: 15px; height: 250px; width: 100%; object-fit: cover" src=' + prop[config.popupImage] + ">";
 
     /* Add details to the individual listing. */
     const details = listing.appendChild(document.createElement("div"));

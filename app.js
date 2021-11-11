@@ -19,7 +19,7 @@ const map = new mapboxgl.Map({
 function flyToLocation(currentFeature) {
   map.flyTo({
     center: currentFeature,
-    zoom: 14,
+    zoom: 15,
   });
 }
 
@@ -367,7 +367,7 @@ const geocoder = new MapboxGeocoder({
   accessToken: mapboxgl.accessToken, // Set the access token
   mapboxgl: mapboxgl, // Set the mapbox-gl instance
   marker: true, // Use the geocoder's default marker style
-  zoom: 14,
+  zoom: 15,
 });
 
 function sortByDistance(selectedPoint) {

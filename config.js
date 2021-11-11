@@ -13,6 +13,12 @@ const config = {
   popupImage: ["Thumbnail"],
   popupLink: ["URL"],
   filters: [
+     {
+      type: "checkbox",
+      title: "Format: ",
+      columnHeader: "Format", // Case sensitive - must match spreadsheet entry
+      listItems: ["Project", "Article", "Post"], // Case sensitive - must match spreadsheet entry; This will take up to six inputs but is best used with a maximum of three;
+    },
     {
       type: "dropdown",
       title: "Theme: ",

@@ -2,7 +2,7 @@
 mapboxgl.accessToken = config.accessToken;
 const columnHeaders = config.sideBarInfo;
 
-setMarkerColor(marker, color) {
+function setMarkerColor(marker, color) {
       let markerElement = marker.getElement();
       markerElement
         .querySelectorAll('svg g[fill="' + marker._color + '"]')[0]

@@ -8,7 +8,7 @@ const config = {
   title: "",
   description:
     "",
-  sideBarInfo: ["Title", "Location", "Summary", "Date Published"],
+  sideBarInfo: ["Title", "Location", "Summary"],
   popupInfo: ["Title"],
   popupImage: ["Thumbnail"],
   popupLink: ["URL"],

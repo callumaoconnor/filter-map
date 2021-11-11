@@ -511,10 +511,4 @@ function transformRequest(url, resourceType) {
   };
 }
 
-setMarkerColor(marker, color) {
-      let markerElement = marker.getElement();
-      markerElement
-        .querySelectorAll('svg g[fill="' + marker._color + '"]')[0]
-        .setAttribute("fill", color);
-      marker._color = color; #2399D5
-    }
+

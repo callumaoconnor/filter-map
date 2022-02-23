@@ -157,3 +157,8 @@
     padding-bottom: 10px;
     
   }
+
+input:checked+.checkbox {
+    background-color: #2399d5!important;
+    
+  }

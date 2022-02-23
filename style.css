@@ -186,5 +186,6 @@ input:checked+.checkbox {
 
 .body-map {
     font-family: 'Source Sans Pro', sans-serif;
+    line-height: 22px;
     
   }

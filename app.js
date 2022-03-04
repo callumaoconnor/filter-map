@@ -82,7 +82,7 @@ function buildLocationList(locationData) {
     const learnMore = listing.appendChild(document.createElement("button"));
     learnMore.className = "learn-more";
     learnMore.innerHTML = 
-      '<p style="line-height: 1.25; padding-bottom: 12px; padding-top: 15px; font-family: Bebasneuepro, sans-serif; font-size: 26px; font-weight: 400!important; text-transform: capitalize;">' + 'Learn More' + "</p>";
+      '<p style="color: #2239d5;">' + 'Learn More' + "</p>";
     
 
     link.addEventListener("click", function () {

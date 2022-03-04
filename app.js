@@ -83,7 +83,7 @@ function buildLocationList(locationData) {
     const learnMore = listing.appendChild(document.createElement("button"));
     learnMore.className = "learn-more";
     learnMore.innerHTML = 
-      '<a href="'itemLinkCo'"><p style="color: #2399d5!important; padding-bottom: 12px; padding-top: -15px;">Learn more</p></a>';
+      '<a href='itemLinkCo'><p style="color: #2399d5!important; padding-bottom: 12px; padding-top: -15px;">Learn more</p></a>';
     
 
     link.addEventListener("click", function () {

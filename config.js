@@ -8,11 +8,12 @@ const config = {
   title: "",
   description:
     "",
-  sideBarInfo: ["Title", "Location", "Summary"],
+  sideBarInfo: ["Title", "Summary"],
   formatInfo: ["Format"],
   popupInfo: ["Title"],
   popupImage: ["Thumbnail"],
   popupLink: ["URL"],
+  locationInfo: ["Location"],
   filters: [
      {
       type: "checkbox",

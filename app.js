@@ -71,7 +71,8 @@ function buildLocationList(locationData) {
     
     /* Add link to the individual listing. */
     const learnMore = listing.appendChild(document.createElement("button"));
-    details.innerHTML = 
+    learnMore.className = "learn-more";
+    learnMore.innerHTML = 
       '<p style="padding-bottom: 8px; font-family: Bebasneuepro, sans-serif; font-size: 20px!important; font-weight: 400!important; text-transform: capitalize;">' + learn more + "</p>" + '<a href=' + currentFeature.properties[config.popupLink] + "></a>";
       
 

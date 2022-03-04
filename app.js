@@ -42,13 +42,17 @@ function buildLocationList(locationData) {
     const prop = location.properties;
     
     const listing = listings.appendChild(document.createElement("div"));
-    if (prop[config.formatInfo] != "Post") {
+    
     /* Assign a unique `id` to the listing. */
     listing.id = "listing-" + prop.id;
-    }
+    
     
     /* Assign the `item` class to each listing for styling. */
+    if (prop[config.formatInfo] != "Post") {
+    listing.className = "hidden-item} else {
     listing.className = "item";
+    }                           
+    
     
 
     /* Add the link to the individual listing created above. */

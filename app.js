@@ -41,15 +41,10 @@ function buildLocationList(locationData) {
   locationData.features.forEach(function (location, i) {
     const prop = location.properties;
 
-    
-    if (formatType != "Post") {
     const listing = listings.appendChild(document.createElement("div"));
     /* Assign a unique `id` to the listing. */
     listing.id = "listing-" + prop.id;
-}
     
-
-
     /* Assign the `item` class to each listing for styling. */
     listing.className = "item";
 

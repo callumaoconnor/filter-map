@@ -82,7 +82,7 @@ function buildLocationList(locationData) {
     const learnMore = listing.appendChild(document.createElement("button"));
     learnMore.className = "learn-more";
     learnMore.innerHTML = 
-      '<p style="padding-bottom: 8px; font-family: Bebasneuepro, sans-serif; font-size: 20px!important; font-weight: 400!important; text-transform: capitalize;">' + currentFeature.properties[config.popupInfo] + "</p>" + '<a href=' + currentFeature.properties[config.popupLink] + '><img style="height: 120px; width: 100%; object-fit: cover" src=' + currentFeature.properties[config.popupImage] + "></a>";
+      '<a href="www.urbandesignx.com"><p style="color: #2399d5!important; padding-bottom: 12px; padding-top: -15px;">Learn more</p></a>';
     
 
     link.addEventListener("click", function () {

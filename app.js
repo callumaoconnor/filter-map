@@ -49,18 +49,19 @@ function buildLocationList(locationData) {
     listing.className = "item";
 
     /* Add the link to the individual listing created above. */
-    if (prop[config.formatInfo] != "Post") {
     const link = listing.appendChild(document.createElement("button"));
+    if (prop[config.formatInfo] != "Post") {
     link.className = "title";
     link.id = "link-" + prop.id;
     link.innerHTML =
       '<p style="line-height: 1.25; padding-bottom: 12px; padding-top: 15px; font-family: Bebasneuepro, sans-serif; font-size: 26px; font-weight: 400!important; text-transform: capitalize;">' + prop[columnHeaders[0]] + "</p>" + '<img style="padding-bottom: 15px; height: 250px; width: 100%; object-fit: cover" src=' + prop[config.popupImage] + ">";
-    }
+    
       
       
     /* Add details to the individual listing. */
     const details = listing.appendChild(document.createElement("div"));
     details.className = "content";
+    }
 
     for (let i = 1; i < columnHeaders.length; i++) {
       const div = document.createElement("div");

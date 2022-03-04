@@ -67,6 +67,12 @@ function buildLocationList(locationData) {
     /* Add details to the individual listing. */
     const details = listing.appendChild(document.createElement("div"));
     details.className = "content";
+    
+    
+    /* Add link to the individual listing. */
+    const learnMore = listing.appendChild(document.createElement("button"));
+    details.innerHTML = 
+      '<p style="padding-bottom: 8px; font-family: Bebasneuepro, sans-serif; font-size: 20px!important; font-weight: 400!important; text-transform: capitalize;">learn more</p>" + '<a href=' + currentFeature.properties[config.popupLink] + "></a>";
       
 
     for (let i = 1; i < columnHeaders.length; i++) {
@@ -74,6 +80,7 @@ function buildLocationList(locationData) {
       div.innerText += prop[columnHeaders[i]];
       div.className += "item-detail-co";
       details.appendChild(div);
+      learnMore.appendChild(div);
     }
 
     link.addEventListener("click", function () {

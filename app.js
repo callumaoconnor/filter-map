@@ -45,10 +45,11 @@ function buildLocationList(locationData) {
     const listing = listings.appendChild(document.createElement("div"));
     /* Assign a unique `id` to the listing. */
     listing.id = "listing-" + prop.id;
+    }
     
     /* Assign the `item` class to each listing for styling. */
     listing.className = "item";
-    }
+    
 
     /* Add the link to the individual listing created above. */
     const link = listing.appendChild(document.createElement("button"));

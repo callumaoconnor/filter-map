@@ -79,7 +79,6 @@ function buildLocationList(locationData) {
     
     
     /* Add link to the individual listing. */
-    const itemLinksCo = currentFeature.properties[config.popupLink];
     const learnMore = listing.appendChild(document.createElement("button"));
     learnMore.className = "learn-more";
     learnMore.innerHTML = 

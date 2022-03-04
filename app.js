@@ -49,8 +49,8 @@ function buildLocationList(locationData) {
     
     /* Assign the `item` class to each listing for styling. */
     if (prop[config.formatInfo] != "Post") {
-    listing.className = "hidden-item"} else {
-    listing.className = "item";
+    listing.className = "item"} else {
+    listing.className = "none";
     }                           
     
     

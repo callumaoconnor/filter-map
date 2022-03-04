@@ -63,12 +63,6 @@ function buildLocationList(locationData) {
       '<p style="line-height: 1.25; padding-bottom: 12px; padding-top: 15px; font-family: Bebasneuepro, sans-serif; font-size: 26px; font-weight: 400!important; text-transform: capitalize;">' + prop[columnHeaders[0]] + "</p>" + '<img style="padding-bottom: 15px; height: 250px; width: 100%; object-fit: cover" src=' + prop[config.popupImage] + ">";
     
     
-    /* Add link to the individual listing. */
-    const learnMore = listing.appendChild(document.createElement("button"));
-    learnMore.className = "learn-more";
-    learnMore.innerHTML = 
-      '<p style="line-height: 1.25; padding-bottom: 12px; padding-top: 15px; font-family: Bebasneuepro, sans-serif; font-size: 26px; font-weight: 400!important; text-transform: capitalize;">' + 'Learn More' + "</p>";
-    
       
     /* Add details to the individual listing. */
     const details = listing.appendChild(document.createElement("div"));
@@ -82,6 +76,14 @@ function buildLocationList(locationData) {
       div.className += "item-detail-co";
       details.appendChild(div);
     }
+    
+    
+    /* Add link to the individual listing. */
+    const learnMore = listing.appendChild(document.createElement("button"));
+    learnMore.className = "learn-more";
+    learnMore.innerHTML = 
+      '<p style="line-height: 1.25; padding-bottom: 12px; padding-top: 15px; font-family: Bebasneuepro, sans-serif; font-size: 26px; font-weight: 400!important; text-transform: capitalize;">' + 'Learn More' + "</p>";
+    
 
     link.addEventListener("click", function () {
       const clickedListing = location.geometry.coordinates;

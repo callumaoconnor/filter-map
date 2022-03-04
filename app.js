@@ -42,15 +42,16 @@ function buildLocationList(locationData) {
     const prop = location.properties;
 
     const listing = listings.appendChild(document.createElement("div"));
+    if (prop[config.formatInfo] != "Post") {
     /* Assign a unique `id` to the listing. */
     listing.id = "listing-" + prop.id;
     
     /* Assign the `item` class to each listing for styling. */
     listing.className = "item";
+    }
 
     /* Add the link to the individual listing created above. */
     const link = listing.appendChild(document.createElement("button"));
-    if (prop[config.formatInfo] != "Post") {
     link.className = "title";
     link.id = "link-" + prop.id;
     link.innerHTML =
@@ -61,7 +62,7 @@ function buildLocationList(locationData) {
     /* Add details to the individual listing. */
     const details = listing.appendChild(document.createElement("div"));
     details.className = "content";
-    }
+      
 
     for (let i = 1; i < columnHeaders.length; i++) {
       const div = document.createElement("div");

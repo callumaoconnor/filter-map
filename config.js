@@ -9,6 +9,7 @@ const config = {
   description:
     "",
   sideBarInfo: ["Title", "Location", "Summary"],
+  formatInfo: ["Format"],
   popupInfo: ["Title"],
   popupImage: ["Thumbnail"],
   popupLink: ["URL"],

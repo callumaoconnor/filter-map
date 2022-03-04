@@ -73,7 +73,8 @@ function buildLocationList(locationData) {
     const learnMore = listing.appendChild(document.createElement("button"));
     learnMore.className = "learn-more";
     learnMore.innerHTML = 
-      '<p style="padding-bottom: 8px; font-family: Bebasneuepro, sans-serif; font-size: 20px!important; font-weight: 400!important; text-transform: capitalize;">' + learn more + "</p>" + '<a href=' + currentFeature.properties[config.popupLink] + "></a>";
+      '<p style="line-height: 1.25; padding-bottom: 12px; padding-top: 15px; font-family: Bebasneuepro, sans-serif; font-size: 26px; font-weight: 400!important; text-transform: capitalize;">' + prop[columnHeaders[0]] + "</p>" + '<img style="padding-bottom: 15px; height: 250px; width: 100%; object-fit: cover" src=' + prop[config.popupImage] + ">";
+    
       
 
     for (let i = 1; i < columnHeaders.length; i++) {

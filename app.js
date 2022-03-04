@@ -41,8 +41,8 @@ function buildLocationList(locationData) {
   locationData.features.forEach(function (location, i) {
     const prop = location.properties;
     
-    if (prop[config.formatInfo] != "Post") {
     const listing = listings.appendChild(document.createElement("div"));
+    if (prop[config.formatInfo] != "Post") {
     /* Assign a unique `id` to the listing. */
     listing.id = "listing-" + prop.id;
     }

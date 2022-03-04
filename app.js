@@ -50,7 +50,7 @@ function buildLocationList(locationData) {
 
     /* Add the link to the individual listing created above. */
     const link = listing.appendChild(document.createElement("button"));
-    if (link.formatType != "Post") {
+    if (prop[config.formatInfo] != "Post") {
     link.className = "title";
     link.id = "link-" + prop.id;
     link.innerHTML =

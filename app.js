@@ -42,7 +42,6 @@ function buildLocationList(locationData) {
     const prop = location.properties;
 
     const listing = listings.appendChild(document.createElement("div"));
-    if (prop[config.formatInfo] != "Post") {
     /* Assign a unique `id` to the listing. */
     listing.id = "listing-" + prop.id;
     
@@ -50,6 +49,7 @@ function buildLocationList(locationData) {
     listing.className = "item";
 
     /* Add the link to the individual listing created above. */
+    if (prop[config.formatInfo] != "Post") {
     const link = listing.appendChild(document.createElement("button"));
     link.className = "title";
     link.id = "link-" + prop.id;

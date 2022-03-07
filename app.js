@@ -447,7 +447,6 @@ map.on("load", function () {
       },
     });
   });
-
   function makeGeoJSON(csvData) {
     csv2geojson.csv2geojson(
       csvData,
@@ -460,48 +459,58 @@ map.on("load", function () {
         data.features.forEach(function (data, i) {
           data.properties.id = i;
         });
-
-        
         geojsonData = data;
-        
-       // Add the the layer to the map
-       map.addLayer({
-         id: "locationData",
-         type: "circle",
-         source: {
-           type: "geojson",
-           data: geojsonData,
-         },
-         paint: {
-           "circle-radius": 5, // size of circles
-           "circle-color": "#2399d5", // color of circles
-           "circle-stroke-color": "white",
-           "circle-stroke-width": 1,
-           "circle-opacity": 0.7,
-         },
-       });
-     }
-   );
-        
+        // Add the the layer to the map
+        map.addLayer({
+          id: "locationData",
+          type: "circle",
+          source: {
+            type: "geojson",
+            data: geojsonData,
+          },
+          paint: {
+            "circle-radius": 5, // size of circles
+            "circle-color": "#2399d5", // color of circles
+            "circle-stroke-color": "white",
+            "circle-stroke-width": 1,
+            "circle-opacity": 0.7,
+          },
+        });
+      }
+    );
+    map.on("click", "locationData", function (e) {
+      const features = map.queryRenderedFeatures(e.point, {
+        layers: ["locationData"],
+      });
+      const clickedPoint = features[0].geometry.coordinates;
+      flyToLocation(clickedPoint);
+      sortByDistance(clickedPoint);
+      createPopup(features[0]);
+    });
+    map.on("mouseenter", "locationData", function () {
+      map.getCanvas().style.cursor = "pointer";
+    });
+    map.on("mouseleave", "locationData", function () {
+      map.getCanvas().style.cursor = "";
+    });
+    buildLocationList(geojsonData);
+  }
+});
 // Modal - popup for filtering results
 const filterResults = document.getElementById("filterResults");
 const exitButton = document.getElementById("exitButton");
 const modal = document.getElementById("modal");
-
 filterResults.addEventListener("click", () => {
   modal.classList.remove("hide-visually");
   modal.classList.add("z5");
 });
-
 exitButton.addEventListener("click", () => {
   modal.classList.add("hide-visually");
 });
-
 const title = document.getElementById("title");
 title.innerText = config.title;
 const description = document.getElementById("description");
 description.innerText = config.description;
-
 function transformRequest(url, resourceType) {
   var isMapboxRequest =
     url.slice(8, 22) === "api.mapbox.com" ||
@@ -510,5 +519,3 @@ function transformRequest(url, resourceType) {
     url: isMapboxRequest ? url.replace("?", "?pluginName=finder&") : url,
   };
 }
-
-

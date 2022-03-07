@@ -495,7 +495,7 @@ map.on("load", function () {
         });
       }
     );
-    map.on("click", "locationData", function (e) {
+    map.on("click", ("locationData", "postData"), function (e) {
       const features = map.queryRenderedFeatures(e.point, {
         layers: ["locationData", "postData"],
       });
@@ -504,10 +504,10 @@ map.on("load", function () {
       sortByDistance(clickedPoint);
       createPopup(features[0]);
     });
-    map.on("mouseenter", "locationData", function () {
+    map.on("mouseenter", ("locationData", "postData"), function () {
       map.getCanvas().style.cursor = "pointer";
     });
-    map.on("mouseleave", "locationData", function () {
+    map.on("mouseleave", ("locationData", "postData"), function () {
       map.getCanvas().style.cursor = "";
     });
     buildLocationList(geojsonData);

@@ -477,6 +477,22 @@ map.on("load", function () {
             "circle-opacity": 0.7,
           },
         });
+        map.addLayer({
+          id: "locationData",
+          type: "circle",
+          source: {
+            type: "geojson",
+            data: geojsonData,
+          },
+          filter: ['==', 'Format', 'Post'],
+          paint: {
+            "circle-radius": 5, // size of circles
+            "circle-color": "#000000", // color of circles
+            "circle-stroke-color": "white",
+            "circle-stroke-width": 1,
+            "circle-opacity": 0.7,
+          },
+        });
       }
     );
     map.on("click", "locationData", function (e) {

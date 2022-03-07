@@ -495,19 +495,34 @@ map.on("load", function () {
         });
       }
     );
-    map.on("click", ("locationData", "postData"), function (e) {
+    map.on("click", "locationData", function (e) {
       const features = map.queryRenderedFeatures(e.point, {
-        layers: ["locationData", "postData"],
+        layers: ["locationData"],
       });
       const clickedPoint = features[0].geometry.coordinates;
       flyToLocation(clickedPoint);
       sortByDistance(clickedPoint);
       createPopup(features[0]);
     });
-    map.on("mouseenter", ("locationData", "postData"), function () {
+    map.on("mouseenter", "locationData", function () {
       map.getCanvas().style.cursor = "pointer";
     });
-    map.on("mouseleave", ("locationData", "postData"), function () {
+    map.on("mouseleave", "locationData", function () {
+      map.getCanvas().style.cursor = "";
+    });
+    map.on("click", "postData", function (e) {
+      const features = map.queryRenderedFeatures(e.point, {
+        layers: ["postData"],
+      });
+      const clickedPoint = features[0].geometry.coordinates;
+      flyToLocation(clickedPoint);
+      sortByDistance(clickedPoint);
+      createPopup(features[0]);
+    });
+    map.on("mouseenter", "postData", function () {
+      map.getCanvas().style.cursor = "pointer";
+    });
+    map.on("mouseleave", "postData", function () {
       map.getCanvas().style.cursor = "";
     });
     buildLocationList(geojsonData);

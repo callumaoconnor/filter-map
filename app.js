@@ -497,7 +497,7 @@ map.on("load", function () {
     );
     map.on("click", "locationData", function (e) {
       const features = map.queryRenderedFeatures(e.point, {
-        layers: ["locationData"],
+        layers: ["locationData", "postData"],
       });
       const clickedPoint = features[0].geometry.coordinates;
       flyToLocation(clickedPoint);

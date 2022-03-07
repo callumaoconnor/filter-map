@@ -478,7 +478,7 @@ map.on("load", function () {
           },
         });
         map.addLayer({
-          id: "locationData",
+          id: "postData",
           type: "circle",
           source: {
             type: "geojson",

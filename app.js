@@ -336,7 +336,7 @@ function applyFilters() {
       });
     }
 
-    map.getSource("locationData", "postData").setData(filteredGeojson);
+    map.getSource("locationData").setData(filteredGeojson);
     buildLocationList(filteredGeojson);
   });
 }
@@ -367,7 +367,7 @@ function removeFilters() {
     option.selectedIndex = 0;
   });
 
-  map.getSource("locationData", "postData").setData(geojsonData);
+  map.getSource("locationData").setData(geojsonData);
   buildLocationList(geojsonData);
 }
 
@@ -471,23 +471,7 @@ map.on("load", function () {
           filter: ['==', 'Format', 'Project'],
           paint: {
             "circle-radius": 5, // size of circles
-            "circle-color": "#2399d5", // color of circles
-            "circle-stroke-color": "white",
-            "circle-stroke-width": 1,
-            "circle-opacity": 0.7,
-          },
-        });
-        map.addLayer({
-          id: "postData",
-          type: "circle",
-          source: {
-            type: "geojson",
-            data: geojsonData,
-          },
-          filter: ['==', 'Format', 'Post'],
-          paint: {
-            "circle-radius": 5, // size of circles
-            "circle-color": "#000000", // color of circles
+            "circle-color": ['get', 'Color'], // color of circles
             "circle-stroke-color": "white",
             "circle-stroke-width": 1,
             "circle-opacity": 0.7,
@@ -508,21 +492,6 @@ map.on("load", function () {
       map.getCanvas().style.cursor = "pointer";
     });
     map.on("mouseleave", "locationData", function () {
-      map.getCanvas().style.cursor = "";
-    });
-    map.on("click", "postData", function (e) {
-      const features = map.queryRenderedFeatures(e.point, {
-        layers: ["postData"],
-      });
-      const clickedPoint = features[0].geometry.coordinates;
-      flyToLocation(clickedPoint);
-      sortByDistance(clickedPoint);
-      createPopup(features[0]);
-    });
-    map.on("mouseenter", "postData", function () {
-      map.getCanvas().style.cursor = "pointer";
-    });
-    map.on("mouseleave", "postData", function () {
       map.getCanvas().style.cursor = "";
     });
     buildLocationList(geojsonData);

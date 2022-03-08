@@ -3,16 +3,16 @@ var _href = document.location.href;
 var params = _href.split("#")[1];
 
 if (params == "") {
-  const pinLocation = "0, 0"
+  const pinLocation = "0, 0";
 }else { 
-  const pinLocation = params
+  const pinLocation = params;
 }
 
 
 if (parms == "") { 
-  const pinZoom = 0
+  const pinZoom = 0;
 }else { 
-  const pinZoom = 20
+  const pinZoom = 20;
 }
 
 const config = {

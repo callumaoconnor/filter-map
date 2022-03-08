@@ -470,8 +470,8 @@ map.on("load", function () {
           },
           paint: {
             "circle-radius": 5, // size of circles
-            "circle-color": ['match', ['get', 'Format'], 'Project', '#2399d5', 'Post', '#808080', 'Article', '#000000', '#ccc'] // color of circles
-            "circle-stroke-color": "white",
+            "circle-color": ['match', ['get', 'Format'], 'Project', '#2399d5', 'Post', '#808080', 'Article', '#ffffff', '#ccc'], // color of circles
+            "circle-stroke-color": ['match', ['get', 'Format'], 'Project', '#ffffff', 'Post', '#ffffff', 'Article', '#2399d5', '#ccc'],
             "circle-stroke-width": 1,
             "circle-opacity": 0.7,
           },

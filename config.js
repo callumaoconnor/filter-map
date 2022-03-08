@@ -2,18 +2,18 @@ var _href = document.location.href;
 
 var params = _href.split("#")[1];
 
-const pinLocation =
 if (params = "") {
-0, 0
-}else if { params
+  const pinLocation = 0, 0
+}else if { 
+  const pinLocation = params
 }
 
-const pinZoom =
-  if (parms = "") {
-  0
-  }else if (parms != "") { 
-  20
-  }
+
+if (parms = "") { 
+  const pinZoom = 0
+}else if (parms != "") { 
+  const pinZoom = 20
+}
   
 
 const config = {

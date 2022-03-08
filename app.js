@@ -468,7 +468,6 @@ map.on("load", function () {
             type: "geojson",
             data: geojsonData,
           },
-          filter: ['==', 'Format', 'Project'],
           paint: {
             "circle-radius": 5, // size of circles
             "circle-color": ['get', 'Color'], // color of circles

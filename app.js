@@ -336,7 +336,7 @@ function applyFilters() {
       });
     }
 
-    map.getSource("locationData").setData(filteredGeojson);
+    map.getSource("locationData", "postData").setData(filteredGeojson);
     buildLocationList(filteredGeojson);
   });
 }
@@ -367,7 +367,7 @@ function removeFilters() {
     option.selectedIndex = 0;
   });
 
-  map.getSource("locationData").setData(geojsonData);
+  map.getSource("locationData", "postData").setData(geojsonData);
   buildLocationList(geojsonData);
 }
 

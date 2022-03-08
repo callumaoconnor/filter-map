@@ -12,8 +12,8 @@ const filteredGeojson = {
 const map = new mapboxgl.Map({
   container: "map",
   style: config.style,
-  center: config.center,
-  zoom: config.zoom,
+  center: pinLocation,
+  zoom: pinZoom,
   transformRequest: transformRequest,
 });
 

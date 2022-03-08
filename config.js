@@ -1,21 +1,3 @@
-var _href = document.location.href;
-
-var params = _href.split("#")[1];
-
-if (params == "") {
-  const pinLocation = "0, 0"
-}else if { 
-  const pinLocation = params
-}
-
-
-if (parms == "") { 
-  const pinZoom = 0
-}else if (parms != "") { 
-  const pinZoom = 20
-}
-  
-
 const config = {
   style: "mapbox://styles/designoutsider/ckvuaw69n144e14pert1cjol2",
   accessToken:

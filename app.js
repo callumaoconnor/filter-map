@@ -469,10 +469,10 @@ map.on("load", function () {
             data: geojsonData,
           },
           paint: {
-            "circle-radius": 5, // size of circles
-            "circle-color": ['match', ['get', 'Format'], 'Project', '#2399d5', 'Post', '#808080', 'Article', '#ffffff', '#ccc'], // color of circles
+            "circle-radius": ['match', ['get', 'Format'], 'Project', 5, 'Post', 3, 'Article', 5, 5], // size of circles
+            "circle-color": ['match', ['get', 'Format'], 'Project', '#2399d5', 'Post', '#ffffff', 'Article', '#808080', '#ccc'], // color of circles
             "circle-stroke-color": '#2399d5',
-            "circle-stroke-width": ['match', ['get', 'Format'], 'Project', 0, 'Post', 0, 'Article', 1, 0],
+            "circle-stroke-width": ['match', ['get', 'Format'], 'Project', 0, 'Post', 1, 'Article', 0, 0],
             "circle-opacity": 0.7,
           },
         });

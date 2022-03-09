@@ -530,7 +530,9 @@ function transformRequest(url, resourceType) {
 
 
 
-const linkeditemco = features.find(element => geometry.coordinates == config.center);
+const linkeditemco = data.find(element => geometry.coordinates == config.center);
 
-setTimeout(function () { document.linkeditemco.click() }, 5000);
+map.fireEvent('click', {latlng: L.latLng(config.pinLat, config.pinLng)});
+
+setTimeout(function () { map.fireEvent('click', {latlng: L.latLng(config.pinLat, config.pinLng)}); }, 5000);
 

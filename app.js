@@ -398,7 +398,7 @@ const geocoder = new MapboxGeocoder({
   zoom: 15,
 });
 
-function sortByDistance(urlLocation) {
+function sortByDistance(selectedPoint) {
   const options = { units: "miles" };
   if (filteredGeojson.features.length > 0) {
     var data = filteredGeojson;

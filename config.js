@@ -7,7 +7,7 @@ let pinLocation;
 if (params) {
   pinLocation = params;
 } else {
-  pinLocation = "0,0";
+  pinLocation = 0, 0;
 };
 
 let pinZoom;

@@ -4,14 +4,14 @@ var params = _href.split("#")[1];
 
 if (params == "") {
   const pinLocation = "0, 0";
-}else { 
+} else { 
   const pinLocation = params;
 };
 
 
 if (params == "") { 
   const pinZoom = 0;
-}else { 
+} else { 
   const pinZoom = 20;
 };
 

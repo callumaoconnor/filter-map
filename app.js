@@ -6,9 +6,7 @@ const formatType = config.formatInfo;
 let geojsonData = {};
 const filteredGeojson = {
   type: "FeatureCollection",
-  features: [{"geometry": {
-          "type": "Point",
-          "coordinates": config.center,}}],
+  features: [],
 };
 
 const map = new mapboxgl.Map({

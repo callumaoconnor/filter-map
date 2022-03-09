@@ -528,10 +528,6 @@ function transformRequest(url, resourceType) {
   };
 }
 
-
-
-const linkeditemco = data.find(element => geometry.coordinates == config.center);
-
 map.fireEvent('click', {latlng: L.latLng(config.pinLat, config.pinLng)});
 
 setTimeout(function () { map.fireEvent('click', {latlng: L.latLng(config.pinLat, config.pinLng)}); }, 5000);

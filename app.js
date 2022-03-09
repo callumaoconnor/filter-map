@@ -528,7 +528,9 @@ function transformRequest(url, resourceType) {
   };
 }
 
-map.fire('click', {lngLat: config.center})
+
+setTimeout(function () { map.fire('click', {lngLat: config.center}) }, 2000);
+
 
 
 

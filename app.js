@@ -522,6 +522,6 @@ function transformRequest(url, resourceType) {
 
 
 
-const linkeditemco = geojsonData.find(element => features.geometry.coordinates == config.center);
+const linkeditemco = data.find(element => features.geometry.coordinates == config.center);
 
 setTimeout(function () { document.linkeditemco.click() }, 5000);

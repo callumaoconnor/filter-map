@@ -8,8 +8,7 @@ if (params == "") {
   pinLocation = '0,0';
 } else {
   pinLocation = params;
-}
-
+};
 
 let pinZoom;
 
@@ -17,7 +16,7 @@ if (params == "") {
   pinZoom = 0;
 } else {
   pinZoom = 20;
-}
+};
 
 const config = {
   style: "mapbox://styles/designoutsider/ckvuaw69n144e14pert1cjol2",

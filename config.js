@@ -8,7 +8,6 @@ if (params.indexOf(",") > -1) {
   const pinLocation = params;
 };
 
-
 if (params.indexOf(",") > -1) { 
   const pinZoom = 0;
 } else { 

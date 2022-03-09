@@ -522,7 +522,7 @@ function transformRequest(url, resourceType) {
 
 
 
-const linkeditemco = listings.find(geojsonData.features.geometry.coordinates == config.center);
+const linkeditemco = listings.find(element => geojsonData.features.geometry.coordinates == config.center);
 window.onload=function(){
   linkeditemco.click();
 };

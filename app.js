@@ -395,7 +395,7 @@ function sortByDistance(selectedPoint) {
   if (filteredGeojson.features.length > 0) {
     var data = filteredGeojson;
   } else {
-    var data = geojsonData;
+    var data = config.center;
   }
   data.features.forEach(function (data) {
     Object.defineProperty(data.properties, "distance", {

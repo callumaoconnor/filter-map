@@ -8,7 +8,7 @@ const pinLocation = params ?
  '0,0'
 
 const pinZoom = params ?
- 20 : 
+ 15 : 
  0
 
 var pinLatLng = pinLocation.split(",");

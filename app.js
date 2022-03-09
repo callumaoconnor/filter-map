@@ -9,6 +9,14 @@ const filteredGeojson = {
   features: [],
 };
 
+const urlLocation = {
+  type: "FeatureCollection",
+  features: [{"geometry": {
+          "type": "Point",
+          "coordinates": config.center,}}
+],
+};
+
 const map = new mapboxgl.Map({
   container: "map",
   style: config.style,
@@ -423,7 +431,7 @@ function sortByDistance(selectedPoint) {
 }
 
 geocoder.on("result", function (ev) {
-  const searchResult = ev.result.geometry;
+  const searchResult = urlLocation;
   sortByDistance(searchResult);
 });
 

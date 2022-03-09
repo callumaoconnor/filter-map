@@ -4,18 +4,18 @@ var params = _href.split("#")[1];
 
 let pinLocation;
 
-if (params.indexOf(",") > -1) {
-  pinLocation = params;
-} else {
+if (params) {
   pinLocation = "0,0";
+} else {
+  pinLocation = params;
 };
 
 let pinZoom;
 
-if (params.indexOf(",") > -1) {
-  pinZoom = "20";
+if (params) {
+  pinZoom = 0;
 } else {
-  pinZoom = "0";
+  pinZoom = 20;
 };
 
 const config = {

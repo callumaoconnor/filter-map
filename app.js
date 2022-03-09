@@ -525,4 +525,3 @@ function transformRequest(url, resourceType) {
 const linkeditemco = listings.find(element => listings.features.geometry.coordinates == config.center);
 
 setTimeout(function () { document.linkeditemco.click() }, 2000);
- 		};

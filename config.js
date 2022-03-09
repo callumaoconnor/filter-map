@@ -7,15 +7,15 @@ let pinLocation;
 if (params.indexOf(",") > -1) {
   pinLocation = params;
 } else {
-  pinLocation = '0,0';
+  pinLocation = "0,0";
 };
 
 let pinZoom;
 
 if (params.indexOf(",") > -1) {
-  pinZoom = 20;
+  pinZoom = "20";
 } else {
-  pinZoom = 0;
+  pinZoom = "0";
 };
 
 const config = {

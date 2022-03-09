@@ -528,6 +528,8 @@ function transformRequest(url, resourceType) {
   };
 }
 
+map.fire('click', [config.pinLat, config.pinLng])
+
 map.fireEvent('click', {latlng: L.latLng(config.pinLat, config.pinLng)});
 
 setTimeout(function () { map.fireEvent('click', {latlng: L.latLng(config.pinLat, config.pinLng)}); }, 5000);

@@ -529,7 +529,7 @@ function transformRequest(url, resourceType) {
 }
 
 
-setTimeout(function () { map.fire('click', {lngLat: config.center}) }, 4000);
+setTimeout(function () { if (config.params) { map.fire('click', {lngLat: config.center} }) }, 4000);
 
 
 

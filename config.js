@@ -7,7 +7,7 @@ const pinLocation = params ?
  params : 
  '0,0'
 
-const pinLocation = params ?
+const pinZoom = params ?
  20 : 
  0
 

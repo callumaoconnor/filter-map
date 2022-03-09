@@ -9,7 +9,7 @@ if (params == "") {
 }
 
 
-if (parms == "") { 
+if (params == "") { 
   const pinZoom = 0;
 }else { 
   const pinZoom = 20;

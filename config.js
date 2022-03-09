@@ -5,17 +5,17 @@ var params = _href.split("#")[1];
 let pinLocation;
 
 if (params) {
-  pinLocation = "0,0";
-} else {
   pinLocation = params;
+} else {
+  pinLocation = "0,0";
 };
 
 let pinZoom;
 
 if (params) {
-  pinZoom = 0;
-} else {
   pinZoom = 20;
+} else {
+  pinZoom = 0;
 };
 
 const config = {

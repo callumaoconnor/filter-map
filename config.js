@@ -20,8 +20,8 @@ const config = {
   accessToken:
     "pk.eyJ1IjoiZGVzaWdub3V0c2lkZXIiLCJhIjoiY2t2Z3MzZmU2MmMzZzMxczFvb205NHpmMCJ9.VGj4qLQIM2q_L1RiG2Tw7A",
   CSV: "https://docs.google.com/spreadsheets/d/1CB45umCdZHRj4zHbW1xHLVcbHz7XxaQg2Q-eixtB7D0/gviz/tq?tqx=out:csv&sheet=Sheet1",
-  center: [0, 0],
-  zoom: 0,
+  center: [pinLocation],
+  zoom: pinZoom,
   title: "",
   description:
     "",

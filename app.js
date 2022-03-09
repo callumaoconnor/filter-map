@@ -6,7 +6,9 @@ const formatType = config.formatInfo;
 let geojsonData = {};
 const filteredGeojson = {
   type: "FeatureCollection",
-  features: [],
+  features: [{"geometry": {
+          "type": "Point",
+          "coordinates": config.center,}}],
 };
 
 const map = new mapboxgl.Map({
@@ -395,7 +397,7 @@ function sortByDistance(selectedPoint) {
   if (filteredGeojson.features.length > 0) {
     var data = filteredGeojson;
   } else {
-    var data = config.center;
+    var data = geojsonData;
   }
   data.features.forEach(function (data) {
     Object.defineProperty(data.properties, "distance", {

@@ -3,17 +3,17 @@ var _href = document.location.href;
 var params = _href.split("#")[1];
 
 let pinLocation;
-if (params) {
-  pinLocation = params;
+if (params == "") {
+  pinLocation = 0,0;
 } else {
-  pinLocation = 0, 0;
+  pinLocation = params;
 };
 
 let pinZoom;
-if (params) {
-  pinZoom = 20;
-} else {
+if (params == "") {
   pinZoom = 0;
+} else {
+  pinZoom = 20;
 };
 
 var pinLatLng = pinLocation.split(",");

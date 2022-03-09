@@ -4,7 +4,7 @@ var params = _href.split("#")[1];
 
 let pinLocation;
 if (params == "") {
-  pinLocation = 0,0;
+  pinLocation = "0,0";
 } else {
   pinLocation = params;
 };

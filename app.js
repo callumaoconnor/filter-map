@@ -403,7 +403,7 @@ function sortByDistance(selectedPoint) {
   if (filteredGeojson.features.length > 0) {
     var data = urlLocation;
   } else {
-    var data = geojsonData;
+    var data = urlLocation;
   }
   data.features.forEach(function (data) {
     Object.defineProperty(data.properties, "distance", {

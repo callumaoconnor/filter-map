@@ -24,10 +24,6 @@ function flyToLocation(currentFeature) {
   });
 }
 
-window.onload=function(){
-  location.geometry.center.click();
-};
-
 function createPopup(currentFeature) {
   const popups = document.getElementsByClassName("mapboxgl-popup");
   /** Check if there is already a popup on the map and if so, remove it */

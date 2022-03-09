@@ -528,7 +528,7 @@ function transformRequest(url, resourceType) {
   };
 }
 
-map.fire('click', [config.pinLat, config.pinLng])
+map.fire('click', {lngLat: config.center})
 
 
 

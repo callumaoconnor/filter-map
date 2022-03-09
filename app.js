@@ -519,3 +519,11 @@ function transformRequest(url, resourceType) {
     url: isMapboxRequest ? url.replace("?", "?pluginName=finder&") : url,
   };
 }
+
+
+
+const linkeditemco = listings.find(geojsonData.features.geometry.coordinates == config.center);
+window.onload=function(){
+  linkeditemco.click();
+};
+

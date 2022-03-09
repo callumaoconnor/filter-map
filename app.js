@@ -532,5 +532,5 @@ map.fireEvent('click', [config.pinLat, config.pinLng])
 
 map.fireEvent('click', {latlng: config.pinLat, config.pinLng});
 
-setTimeout(function () { map.fireEvent('click', {latlng: L.latLng(config.pinLat, config.pinLng)}); }, 5000);
+setTimeout(function () { map.fireEvent('click', {latlng: config.pinLat, config.pinLng}); }, 5000);
 

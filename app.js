@@ -407,7 +407,7 @@ function sortByDistance(selectedPoint) {
   }
   data.features.forEach(function (data) {
     Object.defineProperty(data.properties, "distance", {
-      value: turf.distance(urlLocation, data.geometry, options),
+      value: turf.distance(selectedPoint, data.geometry, options),
       writable: true,
       enumerable: true,
       configurable: true,
@@ -530,7 +530,7 @@ function transformRequest(url, resourceType) {
 
 
 
-const linkeditemco = geojsonData.find(element => features.geometry.coordinates == config.center);
+const linkeditemco = features.find(element => geometry.coordinates == config.center);
 
 setTimeout(function () { document.linkeditemco.click() }, 5000);
 

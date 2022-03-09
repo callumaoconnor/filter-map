@@ -398,16 +398,16 @@ const geocoder = new MapboxGeocoder({
   zoom: 15,
 });
 
-function sortByDistance(selectedPoint) {
+function sortByDistance(urlLocation) {
   const options = { units: "miles" };
   if (filteredGeojson.features.length > 0) {
-    var data = urlLocation;
+    var data = filteredGeojson;
   } else {
-    var data = urlLocation;
+    var data = geojsonData;
   }
   data.features.forEach(function (data) {
     Object.defineProperty(data.properties, "distance", {
-      value: turf.distance(selectedPoint, data.geometry, options),
+      value: turf.distance(urlLocation, data.geometry, options),
       writable: true,
       enumerable: true,
       configurable: true,
@@ -431,7 +431,7 @@ function sortByDistance(selectedPoint) {
 }
 
 geocoder.on("result", function (ev) {
-  const searchResult = urlLocation;
+  const searchResult = ev.result.geometry;;
   sortByDistance(searchResult);
 });
 

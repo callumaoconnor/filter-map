@@ -2,16 +2,21 @@ var _href = document.location.href;
 
 var params = _href.split("#")[1];
 
-if (params.indexOf(",") > -1) {
-  const pinLocation = "0, 0";
-} else { 
-  const pinLocation = params;
+let pinLocation;
+
+if (params == "") {
+  pinLocation = '0,0';
+} else {
+  pinLocation = params;
 };
 
-if (params.indexOf(",") > -1) { 
-  const pinZoom = 0;
-} else { 
-  const pinZoom = 20;
+
+let pinZoom;
+
+if (params == "") {
+  pinZoom = 0;
+} else {
+  pinZoom = 20;
 };
 
 const config = {

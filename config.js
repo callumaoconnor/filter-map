@@ -3,14 +3,14 @@ var _href = document.location.href;
 var params = _href.split("#")[1];
 
 let pinLocation;
-if (params == "") {
+if (params) {
   pinLocation = "0,0";
 } else {
   pinLocation = params;
 };
 
 let pinZoom;
-if (params == "") {
+if (params) {
   pinZoom = 0;
 } else {
   pinZoom = 20;

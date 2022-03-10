@@ -91,7 +91,8 @@ const config = {
        "Retail", 
        "Rural", 
        "Services", 
-       "Urban"], // Case sensitive - must match spreadsheet entry; This will take up to six inputs but is best used with a maximum of three;
+       "Urban"
+      ], // Case sensitive - must match spreadsheet entry; This will take up to six inputs but is best used with a maximum of three;
     },
     {
       type: "dropdown",

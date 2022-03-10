@@ -13,11 +13,11 @@ var pinLat = parseFloat(pinLatLng[1]);
 
 var pinLng = parseFloat(pinLatLng[0]);
 
-var pinLngLatArray = pinLat & pinLng ?
+var pinLngLatArray = pinLat && pinLng ?
       [pinLat, pinLng]:
       [0, 0]
 
-const pinZoom = pinLat & pinLng ?
+const pinZoom = pinLat && pinLng ?
  15 : 
  0
 

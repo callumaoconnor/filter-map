@@ -7,10 +7,6 @@ const pinLocation = params ?
  params : 
  '0,0'
 
-const pinZoom = params ?
- 15 : 
- 0
-
 var pinLatLng = pinLocation.split(",");
 
 var pinLat = parseFloat(pinLatLng[1]);
@@ -20,6 +16,11 @@ var pinLng = parseFloat(pinLatLng[0]);
 var pinLngLatArray = pinLat & pinLng ?
       [pinLat, pinLng]:
       [0, 0]
+
+const pinZoom = pinLat & pinLng ?
+ 15 : 
+ 0
+
 
 const config = {
   style: "mapbox://styles/designoutsider/ckvuaw69n144e14pert1cjol2",

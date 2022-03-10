@@ -40,13 +40,17 @@ const config = {
   locationInfo: ["Location"],
   filters: [
      {
-      type: "checkbox",
+      type: "dropdown",
       title: "Format: ",
       columnHeader: "Format", // Case sensitive - must match spreadsheet entry
-      listItems: ["Project", "Article", "Post"], // Case sensitive - must match spreadsheet entry; This will take up to six inputs but is best used with a maximum of three;
+      listItems: [
+       "Project", 
+       "Article", 
+       "Post"
+      ], // Case sensitive - must match spreadsheet entry; This will take up to six inputs but is best used with a maximum of three;
     },
     {
-      type: "dropdown",
+      type: "checkbox",
       title: "Theme: ",
       columnHeader: "Theme",
       listItems: [
@@ -73,7 +77,25 @@ const config = {
       type: "checkbox",
       title: "Typology: ",
       columnHeader: "Typology", // Case sensitive - must match spreadsheet entry
-      listItems: ["Culinary", "Cultural", "Industrial", "Infrastructure", "Landscape", "Leisure", "Masterplan", "Mixed Use", "Office", "Public", "Public Art", "Public Space", "Religious", "Residential", "Retail", "Rural", "Services", "Urban"], // Case sensitive - must match spreadsheet entry; This will take up to six inputs but is best used with a maximum of three;
+      listItems: [
+       "Culinary", 
+       "Cultural", 
+       "Industrial", 
+       "Infrastructure", 
+       "Landscape", 
+       "Leisure", 
+       "Masterplan", 
+       "Mixed Use", 
+       "Office", 
+       "Public", 
+       "Public Art", 
+       "Public Space", 
+       "Religious", 
+       "Residential", 
+       "Retail", 
+       "Rural", 
+       "Services", 
+       "Urban"], // Case sensitive - must match spreadsheet entry; This will take up to six inputs but is best used with a maximum of three;
     },
     {
       type: "dropdown",

@@ -521,5 +521,5 @@ function transformRequest(url, resourceType) {
 }
 
 
-
-setTimeout(function () {if (params) {map.fire('click', {latLng: [pinLat, pinLng]})}}, 2000);
+var centerMap =  map.getCenter();
+setTimeout(function () {if (params) {map.fire('click', {latLng: centerMap})}}, 2000);

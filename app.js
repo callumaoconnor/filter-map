@@ -522,4 +522,4 @@ function transformRequest(url, resourceType) {
 
 
 var centerMap =  map.getCenter();
-setTimeout(function () {if (params) {map.fire('click', {latLng: centerMap})}}, 2000);
+setTimeout(function () {if (params) {map.fire('click', {lnglat: centerMap})}}, 2000);

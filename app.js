@@ -528,7 +528,7 @@ function transformRequest(url, resourceType) {
   };
 }
 
-function () {
+openLinkModal = function () {
 if (config.params) { 
   setTimeout(function () {map.fire('click', {lngLat: config.center}) }, 4000);
   };

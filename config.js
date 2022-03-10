@@ -55,8 +55,6 @@ const config = {
       columnHeader: "Theme",
       listItems: [
         "Arts",
-        "Books",
-        "Business",
         "Community",
         "Culture",
         "Economy",
@@ -64,13 +62,10 @@ const config = {
         "Environment",
         "Goverment",
         "Health",
-        "Housing",
         "Justice",
         "Opinion",
         "Technology",
-        "Transportation",
         "Travel",
-        "Video",
       ],
     },
     {

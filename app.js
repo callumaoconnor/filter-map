@@ -479,7 +479,7 @@ map.on("load", function () {
       }
     );
     map.on("click", "locationData", function (e) {
-      const features = map.queryRenderedFeatures(e.point, {
+      const features = map.queryRenderedFeatures(e.lngLat, {
         layers: ["locationData"],
       });
       const clickedPoint = features[0].geometry.coordinates;

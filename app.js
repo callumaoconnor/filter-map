@@ -9,14 +9,6 @@ const filteredGeojson = {
   features: [],
 };
 
-const urlLocation = {
-  type: "FeatureCollection",
-  features: [{"geometry": {
-          "type": "Point",
-          "coordinates": config.center,}}
-],
-};
-
 const map = new mapboxgl.Map({
   container: "map",
   style: config.style,

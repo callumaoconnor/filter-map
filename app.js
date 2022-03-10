@@ -3,6 +3,8 @@ mapboxgl.accessToken = config.accessToken;
 const columnHeaders = config.sideBarInfo;
 const formatType = config.formatInfo;
 
+options.clickTolerance = 0.001
+
 let geojsonData = {};
 const filteredGeojson = {
   type: "FeatureCollection",

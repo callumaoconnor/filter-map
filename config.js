@@ -17,12 +17,14 @@ var pinLat = parseFloat(pinLatLng[1]);
 
 var pinLng = parseFloat(pinLatLng[0]);
 
+var pinLngLatArray = [pinLat, pinLng];
+
 const config = {
   style: "mapbox://styles/designoutsider/ckvuaw69n144e14pert1cjol2",
   accessToken:
     "pk.eyJ1IjoiZGVzaWdub3V0c2lkZXIiLCJhIjoiY2t2Z3MzZmU2MmMzZzMxczFvb205NHpmMCJ9.VGj4qLQIM2q_L1RiG2Tw7A",
   CSV: "https://docs.google.com/spreadsheets/d/1CB45umCdZHRj4zHbW1xHLVcbHz7XxaQg2Q-eixtB7D0/gviz/tq?tqx=out:csv&sheet=Sheet1",
-  center: [pinLat, pinLng],
+  center: pinLngLatArray,
   zoom: pinZoom,
   title: "",
   description:

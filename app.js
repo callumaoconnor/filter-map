@@ -529,4 +529,4 @@ function transformRequest(url, resourceType) {
 }
 
 
-if (config.params) { setTimeout( map.fire('click', {lngLat: config.center} ), 4000);};
+if (config.params) { setTimeout(function () { map.fire('click', {lngLat: config.center}) }, 4000);};

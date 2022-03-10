@@ -525,8 +525,10 @@ function transformRequest(url, resourceType) {
 
 
 var centerMap =  map.getCenter();
+setTimeout(function () {if (pinLat && pinLng) {map.fire('click', { latLng: centerMap, point: map.project(centerMap), originalEvent: {} })}}, 3000);
 
 $(document).ready(function(){
-setTimeout(function () {if (pinLat && pinLng) {map.fire('click', { latLng: centerMap, point: map.project(centerMap), originalEvent: {} })}}, 3000);
+if (pinLat && pinLng) {map.fire('click', { latLng: centerMap, point: map.project(centerMap), originalEvent: {} })}
 });
+
 

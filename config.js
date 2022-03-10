@@ -9,9 +9,9 @@ const pinLocation = params ?
 
 var pinLatLng = pinLocation.split(",");
 
-var pinLat = pinLatLng[1];
+var pinLat = parseFloat(pinLatLng[1]);
 
-var pinLng = pinLatLng[0];
+var pinLng = parseFloat(pinLatLng[0]);
 
 var pinLngLatArray = pinLat & pinLng ?
       [pinLat, pinLng]:

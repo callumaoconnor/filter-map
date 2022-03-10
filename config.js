@@ -13,9 +13,9 @@ const pinZoom = params ?
 
 var pinLatLng = pinLocation.split(",");
 
-var pinLat = pinLatLng[0];
+var pinLat = pinLatLng[1];
 
-var pinLng = pinLatLng[1];
+var pinLng = pinLatLng[0];
 
 const config = {
   style: "mapbox://styles/designoutsider/ckvuaw69n144e14pert1cjol2",

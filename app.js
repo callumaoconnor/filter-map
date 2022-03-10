@@ -479,7 +479,7 @@ map.on("load", function () {
       }
     );
     map.on("click", "locationData", function (e) {
-      const features = map.queryRenderedFeatures(e.lngLat, {
+      const features = map.queryRenderedFeatures(e.point, {
         layers: ["locationData"],
       });
       const clickedPoint = features[0].geometry.coordinates;
@@ -521,5 +521,8 @@ function transformRequest(url, resourceType) {
 }
 
 
+
+
+
 var centerMap =  map.getCenter();
-setTimeout(function () {if (params) {map.fire('click', {lnglat: centerMap})}}, 2000);
+setTimeout(function () {if (params) {map.fire('click', { latLng: centerMap, point: map.project(centerMap), originalEvent: {} })}}, 2000);

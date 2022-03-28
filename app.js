@@ -48,7 +48,7 @@ function buildLocationList(locationData) {
     
     
     /* Assign the `item` class to each listing for styling. */
-    if (prop[config.formatInfo] != "Post") {
+    if (prop[config.formatInfo] != "x") {
     listing.className = "item"} else {
     listing.className = "none";
     }                           

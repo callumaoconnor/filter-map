@@ -102,6 +102,7 @@ const config = {
       listItems: [
         "Academic",
         "Competition",
+        "Concept",
         "Realised",
         "Construction",
         "Demolished",
